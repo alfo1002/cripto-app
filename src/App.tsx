@@ -7,6 +7,7 @@ function App() {
   const fetchCryptos = useCryptoStore(state => state.fetchCryptos)
 
   useEffect(() => {
+    console.log("Llenando el store con las criptomonedas")
     fetchCryptos()
   }, [])
 
